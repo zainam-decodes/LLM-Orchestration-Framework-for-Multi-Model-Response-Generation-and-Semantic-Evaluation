@@ -36,21 +36,52 @@ st.markdown(f"""
     .model-card h4 {{ color: #3b82f6 !important; font-weight: 700; margin-bottom: 15px; }}
     .judge-card {{ background-color: {CARD_BGC}; border: 3px solid #eab308; border-radius: 20px; padding: 30px; box-shadow: 0 0 20px rgba(234, 179, 8, 0.2); }}
     
-    /* UPDATED RACE TRACK & CAR DIRECTION */
-    .race-track-container {{ background: #111; border-radius: 50px; height: 60px; width: 100%; margin: 15px 0; position: relative; border: 2px dashed #444; display: flex; align-items: center; overflow: visible; }}
-    .race-car-lane {{ height: 100%; background: linear-gradient(90deg, #3b82f6aa, #22c55eaa); border-radius: 50px; position: relative; display: flex; align-items: center; justify-content: flex-end; }}
+    /* UPDATED: THINNER RACE TRACK & SPARKING EFFECT */
+    .race-track-container {{ 
+        background: #111; 
+        border-radius: 50px; 
+        height: 28px; /* Thinner height */
+        width: 100%; 
+        margin: 10px 0; 
+        position: relative; 
+        border: 1px dashed #444; 
+        display: flex; 
+        align-items: center; 
+        overflow: visible; 
+    }}
+    .race-car-lane {{ 
+        height: 100%; 
+        background: linear-gradient(90deg, #3b82f6aa, #22c55eaa); 
+        border-radius: 50px; 
+        position: relative; 
+        display: flex; 
+        align-items: center; 
+        justify-content: flex-end; 
+    }}
     .winner-lane {{ background: linear-gradient(90deg, #f59e0baa, #eab308aa) !important; }}
     
     .car-icon {{ 
-        font-size: 40px; 
+        font-size: 28px; /* Scaled to fit thinner track */
         position: absolute; 
-        right: -10px; 
-        /* Flips the car to face RIGHT toward the finish line */
+        right: -14px; 
         transform: scaleX(-1); 
-        filter: drop-shadow(0 0 5px white); 
+        filter: drop-shadow(0 0 8px {HEADER_GREEN});
+        animation: spark 0.2s infinite alternate;
+    }}
+
+    @keyframes spark {{
+        from {{ filter: drop-shadow(0 0 2px white); }}
+        to {{ filter: drop-shadow(0 0 10px yellow); }}
     }}
     
-    .finish-line {{ position: absolute; right: 20px; font-size: 20px; color: white; opacity: 0.5; }}
+    .finish-line {{ 
+        position: absolute; 
+        right: 15px; 
+        font-size: 16px; 
+        color: white; 
+        opacity: 0.8; 
+    }}
+
     .suggestion-box {{ background: {CARD_BGC}; border: 1px dashed {HEADER_GREEN}; border-radius: 12px; padding: 20px; margin-bottom: 20px; }}
     .suggestion-pill {{ background: rgba(34, 197, 94, 0.1); border: 1px solid {HEADER_GREEN}; border-radius: 20px; padding: 5px 15px; margin: 5px; display: inline-block; font-size: 0.85rem; color: {TEXT_C}; }}
     .scoreboard-header {{ font-weight: 800; font-size: 1.15rem; margin-top: 25px; color: {TEXT_C}; text-transform: uppercase; border-left: 4px solid {HEADER_GREEN}; padding-left: 10px; }}
