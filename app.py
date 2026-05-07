@@ -62,6 +62,7 @@ with st.sidebar:
     st.markdown('<p class="green-header">⚙️ System Config</p>', unsafe_allow_html=True)
     st.button("🌓 Toggle UI Mode", on_click=toggle_theme, use_container_width=True)
     st.divider()
+    st.markdown('<p class="green-header">🤖 Generator Models</p>', unsafe_allow_html=True)
     m1 = st.selectbox("Model 1", ["openai/gpt-4o-mini", "meta-llama/llama-3.1-70b-instruct", "mistralai/mistral-large"], index=0)
     m2 = st.selectbox("Model 2", ["openai/gpt-4o-mini", "meta-llama/llama-3.1-70b-instruct", "mistralai/mistral-large"], index=1)
     m3 = st.selectbox("Model 3", ["openai/gpt-4o-mini", "meta-llama/llama-3.1-70b-instruct", "mistralai/mistral-large"], index=2)
