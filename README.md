@@ -1,16 +1,10 @@
 ## 🧩 Multi-LLM Ensemble Reasoning System
 ### *The Semantic Grand Prix of AI Orchestration*
 
-![Framework Banner](./banner.png)
+
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&weight=900&duration=7000&pause=1000&color=22C55E&width=1000&lines=MULTI-LLM+ENSEMBLE+REASONING+SYSTEM;ORCHESTRATING+GPT-4O%2C+LLAMA+3.1%2C+MISTRAL+LARGE;LLM-AS-A-JUDGE+SEMANTIC+EVALUATION;GRAND+PRIX+RACING+UI+SCOREBOARD)
-
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg) 
-![Streamlit](https://img.shields.io/badge/Streamlit-UI%2FUX-FF4B4B.svg) 
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-green.svg) 
-![Meta](https://img.shields.io/badge/Meta-Llama--3.1-0668E1.svg) 
-![Mistral](https://img.shields.io/badge/Mistral-Large-f59e0b.svg) 
-![License](https://img.shields.io/badge/License-MIT-lightgrey.svg) 
+![Framework Banner](./banner.png)
 
 🏁 **The Ensemble Reasoning System** is a high-performance **orchestration framework** designed to pit multiple Large Language Models (LLMs) against each other in a "Semantic Grand Prix." By utilizing a robust **API pipeline** and an **LLM-as-a-Judge** architecture, the system evaluates model outputs across dimensions like accuracy, hallucination, and bias to determine a definitive winner.
 
