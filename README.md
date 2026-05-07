@@ -1,65 +1,71 @@
-## 🧩 Multi-LLM Ensemble Reasoning System with LLM-as-a-Judge Evaluation and Fault-Tolerant Inference Pipeline
-
+## 🧩 Multi-LLM Ensemble Reasoning System
 ### *The Semantic Grand Prix of AI Orchestration*
 
-This project is a high-performance **orchestration framework** designed to pit multiple Large Language Models (LLMs) against each other in a "Semantic Grand Prix." By utilizing an **API pipeline** and an **LLM-as-a-Judge** architecture, the system evaluates model outputs across dimensions like accuracy, hallucination, and bias to determine a definitive winner for any complex query.
+![Framework Banner](./banner.svg)
+
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&weight=900&duration=7000&pause=1000&color=22C55E&width=1000&lines=MULTI-LLM+ENSEMBLE+REASONING+SYSTEM;ORCHESTRATING+GPT-4O%2C+LLAMA+3.1%2C+MISTRAL+LARGE;LLM-AS-A-JUDGE+SEMANTIC+EVALUATION;GRAND+PRIX+RACING+UI+SCOREBOARD)
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg) 
+![Streamlit](https://img.shields.io/badge/Streamlit-UI%2FUX-FF4B4B.svg) 
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-green.svg) 
+![Meta](https://img.shields.io/badge/Meta-Llama--3.1-0668E1.svg) 
+![Mistral](https://img.shields.io/badge/Mistral-Large-f59e0b.svg) 
+![License](https://img.shields.io/badge/License-MIT-lightgrey.svg) 
+
+🏁 **The Ensemble Reasoning System** is a high-performance **orchestration framework** designed to pit multiple Large Language Models (LLMs) against each other in a "Semantic Grand Prix." By utilizing a robust **API pipeline** and an **LLM-as-a-Judge** architecture, the system evaluates model outputs across dimensions like accuracy, hallucination, and bias to determine a definitive winner.
 
 ---
 
-## 🚀 Key Features
-
-* **Multi-Model Reasoning**: Simultaneously triggers multiple state-of-the-art models (GPT-4o, Llama 3.1, Mistral Large) to provide diverse perspectives on a single prompt.
-* **Intelligent Orchestration**: A central controller manages the **API pipeline**, handling inference requests and aggregating responses in real-time.
-* **LLM-as-a-Judge Framework**: Uses a dedicated evaluator model to score competitors based on 5 key metrics: Accuracy, Completeness, Relevance, Efficiency, and Cost.
-* **Gamified Scoreboard**: A custom-built Streamlit UI featuring a **Grand Prix Scoreboard** with sports cars that race toward a finish line based on their confidence scores.
-* **Stress Test Suite**: Built-in suggestion box for testing **Conflict, Hallucination, and Bias** to push the boundaries of model logic.
-
----
-
-## 🛠️ Technical Architecture
-
-The system is built on a modular **framework** designed for scalability:
-
-1.  **Frontend**: Streamlit-based UI with dynamic theme switching (High-Contrast Light/Dark modes).
-2.  **Inference Engine**: A robust pipeline connecting to model providers (OpenAI, Meta, Mistral) via unified API calls.
-3.  **Evaluation Layer**: A semantic judge that analyzes cross-model conflicts and identifies hallucinations.
-4.  **Visualization**: Custom CSS-in-JS animations for the "Championship" confetti and racing scoreboard.
+## 🚀 Project Overview
+In the rapidly evolving AI landscape, a single model often suffers from specific biases or hallucinations. This project provides:
+* 🤖 **Multi-Model Reasoning**: Simultaneously triggers multiple state-of-the-art models (GPT-4o-mini, Llama 3.1-70b, Mistral Large) to provide diverse perspectives.
+* 🧩 **Orchestration Framework**: A centralized controller that manages the **API pipeline**, ensuring synchronized inference and response aggregation.
+* ⚖️ **Semantic Evaluation**: An automated judge that scores competitors based on Accuracy, Completeness, Relevance, and Logic Traps.
+* 🏎️ **Grand Prix Scoreboard**: A custom UI where models compete in real-time, racing toward the finish line with a **Championship Confetti** celebration for the winner.
 
 ---
 
-## 🏁 Getting Started
+## 🔬 Stress Test Suite
+The framework includes a dedicated **Suggestion Box** to test the resilience of the models against:
+* **Hallucinations**: Probing for non-existent events (e.g., "The 1926 World Cup").
+* **Conflict & Bias**: Evaluating how models handle sensitive or stereotyping prompts to ensure ethical output.
+* **Logic Traps**: Complex reasoning riddles to test the depth of the ensemble's thinking.
 
-### 1. Prerequisites
-* Python 3.9+
-* API Keys for OpenAI / Groq / Mistral (stored in a `.env` file)
+---
 
-### 2. Installation
+## 🛠️ Tech Stack & Frameworks
+- **Frontend**: Streamlit with Custom CSS/JavaScript for the Grand Prix Race Animations.
+- **Orchestration**: Python-based API pipeline for multi-model concurrent execution.
+- **Models**: Integration with OpenAI, Meta, and Mistral via cloud providers.
+- **Evaluation**: LLM-as-a-Judge prompt engineering for objective scoring.
+
+---
+
+## 🏁 Installation & Setup
+
+### 1. Clone the Repository
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/multi-llm-ensemble.git
-
-# Install dependencies
-pip install -r requirements.txt
+cd multi-llm-ensemble
 ```
 
-### 3. Execution
+### 2. Configure Environment
+Create a `.env` file and add your API keys:
+```env
+OPENAI_API_KEY=your_key_here
+GROQ_API_KEY=your_key_here
+MISTRAL_API_KEY=your_key_here
+```
+
+### 3. Run the App
 ```bash
-# Launch the Grand Prix
 streamlit run app.py
 ```
 
 ---
 
-## 🔬 Testing Logic Traps
-Use the built-in **Suggestion Box** to evaluate how the framework handles:
-* **Hallucinations**: Prompting for events that never happened (e.g., "The 1926 World Cup").
-* **Conflict**: Forcing models to argue over hardware-specific coding logic.
-* **Bias**: Testing for ageist, sexist, or professional stereotypes in technical responses.
+## 👩‍💻 Author
+**Zainab Jahan Umaima**
+*Software Developer & Technical Project Lead*
 
----
-
-## 👨‍💻 Author
-**Zainab Jahan Umaima** *Technical Project Lead & Software Developer*
-
----
-> *“In the race for intelligence, accuracy is the finish line.”*
+> *“In the race 🏎️ for intelligence, accuracy is the finish line 🏁.”*
