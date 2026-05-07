@@ -36,50 +36,50 @@ st.markdown(f"""
     .model-card h4 {{ color: #3b82f6 !important; font-weight: 700; margin-bottom: 15px; }}
     .judge-card {{ background-color: {CARD_BGC}; border: 3px solid #eab308; border-radius: 20px; padding: 30px; box-shadow: 0 0 20px rgba(234, 179, 8, 0.2); }}
     
-    /* UPDATED: THINNER RACE TRACK & SPARKING EFFECT */
+    /* UPDATED: EXTREMELY THIN RACE TRACK 'LINE' */
     .race-track-container {{ 
-        background: #111; 
+        background: transparent; /* Changed to transparent for a clean line look */
         border-radius: 50px; 
-        height: 28px; /* Thinner height */
+        height: 6px; /* Ultra-thin, like a single line */
         width: 100%; 
-        margin: 10px 0; 
+        margin: 15px 0; /* Reduced vertical margin */
         position: relative; 
-        border: 1px dashed #444; 
+        border-bottom: 1px dashed #444; /* Just a single dashed baseline */
         display: flex; 
         align-items: center; 
         overflow: visible; 
     }}
     .race-car-lane {{ 
         height: 100%; 
-        background: linear-gradient(90deg, #3b82f6aa, #22c55eaa); 
+        background: linear-gradient(90deg, #3b82f6ff, #22c55eff); /* Solid colors for sharp line */
         border-radius: 50px; 
         position: relative; 
         display: flex; 
         align-items: center; 
         justify-content: flex-end; 
     }}
-    .winner-lane {{ background: linear-gradient(90deg, #f59e0baa, #eab308aa) !important; }}
+    .winner-lane {{ background: linear-gradient(90deg, #f59e0bff, #eab308ff) !important; }}
     
     .car-icon {{ 
-        font-size: 28px; /* Scaled to fit thinner track */
+        font-size: 24px; /* Slightly scaled car for the thin line */
         position: absolute; 
-        right: -14px; 
+        right: -10px; 
         transform: scaleX(-1); 
-        filter: drop-shadow(0 0 8px {HEADER_GREEN});
-        animation: spark 0.2s infinite alternate;
+        filter: drop-shadow(0 0 6px {HEADER_GREEN});
+        animation: spark 0.1s infinite alternate; /* Faster sparking for more intensity */
     }}
 
     @keyframes spark {{
         from {{ filter: drop-shadow(0 0 2px white); }}
-        to {{ filter: drop-shadow(0 0 10px yellow); }}
+        to {{ filter: drop-shadow(0 0 12px yellow); }}
     }}
     
     .finish-line {{ 
         position: absolute; 
-        right: 15px; 
-        font-size: 16px; 
+        right: 10px; 
+        font-size: 14px; 
         color: white; 
-        opacity: 0.8; 
+        opacity: 1; /* Full opacity for the end marker */
     }}
 
     .suggestion-box {{ background: {CARD_BGC}; border: 1px dashed {HEADER_GREEN}; border-radius: 12px; padding: 20px; margin-bottom: 20px; }}
