@@ -1,0 +1,36 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" rx="20" fill="#020617"/>
+  
+  <path d="M0 320H800" stroke="#1e293b" stroke-width="2" stroke-dasharray="10 10"/>
+  <path d="M0 360H800" stroke="#22c55e" stroke-width="4" stroke-opacity="0.3"/>
+  
+  <circle cx="400" cy="160" r="100" fill="#22c55e" fill-opacity="0.1"/>
+  
+  <g transform="translate(360, 120) scale(0.8)">
+    <path d="M72 12C72 5.37258 66.6274 0 60 0H12C5.37258 0 0 5.37258 0 12V60C0 66.6274 5.37258 72 12 72H24V84C24 90.6274 29.3726 96 36 96C42.6274 96 48 90.6274 48 84V72H60C66.6274 72 72 66.6274 72 60V48H84C90.6274 48 96 42.6274 96 36C96 29.3726 90.6274 24 84 24H72V12Z" fill="#22c55e"/>
+  </g>
+  
+  <path d="M150 160H320" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="150" cy="160" r="4" fill="#3b82f6"/>
+  
+  <path d="M180 130H320" stroke="#eab308" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="180" cy="130" r="4" fill="#eab308"/>
+  
+  <path d="M180 190H320" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="180" cy="190" r="4" fill="#f8fafc"/>
+
+  <text x="400" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#f8fafc" style="text-transform: uppercase; letter-spacing: 1px;">
+    LLM Orchestration Framework
+  </text>
+  
+  <text x="400" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#cbd5e1">
+    Multi-Model Response Generation &amp; Semantic Evaluation
+  </text>
+  
+  <g transform="translate(620, 265)">
+    <rect width="10" height="10" fill="white"/>
+    <rect x="10" y="10" width="10" height="10" fill="white"/>
+    <rect x="10" width="10" height="10" fill="#444"/>
+    <rect y="10" width="10" height="10" fill="#444"/>
+  </g>
+</svg>
