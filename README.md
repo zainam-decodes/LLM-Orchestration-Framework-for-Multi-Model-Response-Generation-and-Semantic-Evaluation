@@ -1,7 +1,7 @@
 ## 🧩 Multi-LLM Ensemble Reasoning System
 ### *The Semantic Grand Prix of AI Orchestration*
 
-![Framework Banner](./banner.svg)
+![Framework Banner](./banner.png)
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&weight=900&duration=7000&pause=1000&color=22C55E&width=1000&lines=MULTI-LLM+ENSEMBLE+REASONING+SYSTEM;ORCHESTRATING+GPT-4O%2C+LLAMA+3.1%2C+MISTRAL+LARGE;LLM-AS-A-JUDGE+SEMANTIC+EVALUATION;GRAND+PRIX+RACING+UI+SCOREBOARD)
 
